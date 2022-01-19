@@ -99,6 +99,31 @@ nav {
 }
 /* Homepage Container End */
 
+/* Exercise Category Start */
+
+.category_container {
+  margin: 0 auto;
+  max-width: 960px;
+  border: 1px solid red;
+}
+
+.exercises_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Exercise Category End */
+
+/* Exercise Card Start */
+
+.exercise_card {
+  margin: 1em;
+  padding: 0.5em 0.75em;
+  background: #fff;
+}
+
+/* Exercise Card End */
+
 /* Footer Start */
 
 .footer_container {

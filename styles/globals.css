@@ -133,6 +133,16 @@ nav {
 
 /* Exercise Card End */
 
+/* Exercise Page Start */
+
+.image_container {
+  position: relative;
+  width: 20em;
+  height: 20em;
+}
+
+/* Exercise Page End */
+
 /* Footer Start */
 
 .footer_container {

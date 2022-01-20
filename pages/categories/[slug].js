@@ -1,4 +1,6 @@
 import { createClient } from 'contentful'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import Image from 'next/image'
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -32,12 +34,27 @@ export async function getStaticProps({ params }) {
 }
 
 const ExerciseCategories = ({ exercise }) => {
-  console.log(exercise.fields.category)
+  const { category, listImage, fullDescription, exercises } = exercise.fields
   return (
-    <div>
-      Exercise Categories
-      <h2>what to see</h2>
-    </div>
+    <main>
+      <h1>{category}</h1>
+      <div className='exercise_page_container'>
+        <Image
+          src={'https:' + listImage.fields.file.url}
+          alt={category}
+          width={listImage.fields.file.details.image.width}
+          height={listImage.fields.file.details.image.height}
+        />
+
+        <div className='exercise_information'>
+          <div>{documentToReactComponents(fullDescription)}</div>
+        </div>
+        <h3>{category} Examples</h3>
+        {exercises.map((exercise) => (
+          <p key={exercise}>{exercise}</p>
+        ))}
+      </div>
+    </main>
   )
 }
 

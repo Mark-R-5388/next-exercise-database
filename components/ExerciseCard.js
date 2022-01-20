@@ -3,14 +3,16 @@ import Link from 'next/link'
 
 const ExerciseCard = ({ exercise }) => {
   const { category, slug, mainDescription, mainImage } = exercise.fields
+
   return (
     <div className='exercise_card'>
       <div className='exercise_card_image'>
         <Image
           src={'https:' + mainImage.fields.file.url}
           alt={category}
-          width={mainImage.fields.file.details.image.width}
-          height={mainImage.fields.file.details.image.height}
+          // width={mainImage.fields.file.details.image.width}
+          // height={mainImage.fields.file.details.image.height}
+          layout='fill'
         />
       </div>
       <div className='exercise_card_content'>

@@ -106,7 +106,6 @@ nav {
   padding: 0.75em;
   margin: 0 auto;
   max-width: 960px;
-  border: 1px solid red;
 }
 
 .exercises_container {
@@ -135,11 +134,11 @@ nav {
 
 /* Exercise Page Start */
 
-.image_container {
+/* .image_container {
   position: relative;
   width: 20em;
   height: 20em;
-}
+} */
 
 /* Exercise Page End */
 

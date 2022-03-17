@@ -26,10 +26,10 @@ export default function Home() {
 				<p>
 					My personal preference is breaking exercises into movement patterns as
 					apposed to just body parts. Click on a category and a description of
-					the movement patter with exercise examples and rep ranges will be
+					the movement pattern with exercise examples will be
 					provided.
 				</p>
-				<p>Ill be updating this periodically so check back every week or so!</p>
+				
 				<p>
 					I want to say thank you for visiting this site and I hope it helps you
 					on your health and fitness journey
